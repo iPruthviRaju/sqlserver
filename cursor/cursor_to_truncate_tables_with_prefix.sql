@@ -21,7 +21,7 @@ fetch next from tbl_cursor into @tblname
 
 while @@FETCH_STATUS = 0
 begin
-	EXECUTE ('truncate table '+ @tblname) -- this is where i get an error
+	EXECUTE ('truncate table '+ @tblname)
 	fetch next from tbl_cursor into @tblname
 end 
 
